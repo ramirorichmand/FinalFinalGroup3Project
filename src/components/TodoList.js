@@ -72,7 +72,7 @@ const TodoList = () => {
             </div>
             {/* This div contains the list of tasks (cards). 
             It uses the taskList state variable to render a Card component for each task. */}
-            <div className = "task-container">
+            <div className = "task-container background-image">
             {/* This code maps over the taskList array and creates a Card component for each task object. 
             It passes the necessary props like the task object, index, deleteTask function, and 
             updateListArray function to each Card component. */}
