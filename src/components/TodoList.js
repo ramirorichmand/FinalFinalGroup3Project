@@ -1,20 +1,21 @@
-import React, {useEffect, useState} from 'react';
+import React, { useEffect, useState } from 'react';
 import CreateTask from '../Containers/CreateTask'
 import Card from './Card';
 import Countdown from './Countdown';
+import Quote from './Quote';
 
 // Define the TodoList functional component
 const TodoList = () => {
     // Declare state variables for modal and taskList
     const [modal, setModal] = useState(false);
     const [taskList, setTaskList] = useState([])
-    
+
     // Use useEffect to load taskList from localStorage on component mount
     useEffect(() => {
         let arr = localStorage.getItem("taskList")
-       
-    // If there is an array in localStorage, parse it as an object and update the taskList state
-        if(arr){
+
+        // If there is an array in localStorage, parse it as an object and update the taskList state
+        if (arr) {
             let obj = JSON.parse(arr)
             setTaskList(obj)
         }
@@ -62,27 +63,28 @@ const TodoList = () => {
     // Render the TodoList component
     return (
         <div className="background-image">
-            <div className = "header text-center">
+            <div className="header text-center">
+                <Quote/>
                 <h2>Todo List</h2>
                 {/* This is a button to create a new task. 
                 When it's clicked, the onClick event sets the modal state to true, which opens the CreateTask modal. */}
-                <button className = "btn btn-primary mt-2" onClick = {() => setModal(true)} >Create Task</button>
+                <button className="btn btn-primary mt-2" onClick={() => setModal(true)} >Create Task</button>
                 <Countdown />
 
             </div>
             {/* This div contains the list of tasks (cards). 
             It uses the taskList state variable to render a Card component for each task. */}
-            <div className = "task-container background-image">
-            {/* This code maps over the taskList array and creates a Card component for each task object. 
+            <div className="task-container background-image">
+                {/* This code maps over the taskList array and creates a Card component for each task object. 
             It passes the necessary props like the task object, index, deleteTask function, and 
             updateListArray function to each Card component. */}
-            {taskList && taskList.map((obj , index) => <Card taskObj = {obj} index = {index} deleteTask = {deleteTask} updateListArray = {updateListArray}/> )}
+                {taskList && taskList.map((obj, index) => <Card taskObj={obj} index={index} deleteTask={deleteTask} updateListArray={updateListArray} />)}
             </div>
             {/* This code includes the CreateTask component in the TodoList component. 
             It passes the necessary props like the toggle function, modal state, and saveTask function to the CreateTask component. 
             When the user clicks the "Create Task" button, the CreateTask modal opens, allowing them to create a new task. */}
-            <CreateTask toggle = {toggle} modal = {modal} save = {saveTask}/>
-         </div>
+            <CreateTask toggle={toggle} modal={modal} save={saveTask} />
+        </div>
     );
 };
 // Export the TodoList component as default
