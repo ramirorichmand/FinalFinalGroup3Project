@@ -1,4 +1,4 @@
-#Star Taskers 🌟 📚
+# Star Taskers 🌟 📚
 
 <h3>Front-end React app based on merge no-conflict's online bookshelf API, made by HackStreet Boys.</h3>
 
