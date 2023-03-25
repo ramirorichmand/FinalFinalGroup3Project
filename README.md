@@ -4,6 +4,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+<!-- <hr /> -->
+
+## Our Presentation
+
+**To be added in later**
+
 ## How to run
 
 **Open and run back-end API in IntelliJ:**
@@ -38,6 +44,11 @@ Landing page: `http://localhost:3000`
 All Do Lists: `http://localhost:8080/todolists`
 
 To Do List By Id: `http://localhost:8080/todolists/1`
+
+## Our Demo 
+### Demonstrating CRUD functionality
+
+https://user-images.githubusercontent.com/122550071/227718056-60daf804-4956-4cb3-924a-0c595ba64e77.mp4
 
 ## Postman 
 
@@ -190,11 +201,7 @@ This method allows the deletion of a specific ToDoList by using its Id in the UR
 
 <hr />
 
-
-<h3>Authors</h3>
-
-
-## **_Collaborators_**
+## Collaborators
 
 - GitHub: [Ramiro ](https://github.com/ramirorichmand)
 - GitHub: [Forida ](https://github.com/hellomati)
