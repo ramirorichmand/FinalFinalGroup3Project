@@ -6,9 +6,14 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 <!-- <hr /> -->
 
+<hr />
+
 ## Our Presentation
 
-**To be added in later**
+
+https://user-images.githubusercontent.com/122550071/227720944-d75ffb8b-7273-408d-b6c1-cfb237eb9b87.mp4
+
+<hr />
 
 ## How to run
 
@@ -35,6 +40,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
         -	App should open automatically on browser
         -	Otherwise check app is running by opening `http://localhost:3000` on your desktop browser
 
+<hr />
+
 ## Routes
 
 The following are the Routes available on the React app, configured using the React Router library:
@@ -45,10 +52,14 @@ All Do Lists: `http://localhost:8080/todolists`
 
 To Do List By Id: `http://localhost:8080/todolists/1`
 
+<hr />
+
 ## Our Demo 
 ### Demonstrating CRUD functionality
 
 https://user-images.githubusercontent.com/122550071/227718056-60daf804-4956-4cb3-924a-0c595ba64e77.mp4
+
+<hr />
 
 ## Postman 
 
