@@ -65,14 +65,14 @@ https://user-images.githubusercontent.com/122550071/227718056-60daf804-4956-4cb3
 
 The following allows you to download all of the API requests (Get, Post, Put and Delete) for use in Postman:
 
-`Bookshelf_API.postman_collection`
+`Planner_API.postman_collection`
 
 To use:
 
 1. Download and open Postman on desktop.
-2. Import `Bookshelf_API.postman_collection`: 
+2. Import `Planner_API.postman_collection`: 
 
-    `File` > `Import` > `Choose Files` > `Bookshelf_API.postman_collection`
+    `File` > `Import` > `Choose Files` > `Planner_API.postman_collection`
 
 
 ## Postman Instructions
